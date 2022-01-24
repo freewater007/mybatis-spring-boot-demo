@@ -35,8 +35,8 @@ public class MybatisSpringBootDemoApplication {
     @Bean
     CommandLineRunner sampleCommandLineRunner() {
         return args -> {
-            log.info("访问H2 Web Console: http://" + serverName + ":" + port + h2Path);
-            System.out.println(this.cityMapper.findByName("chengdu"));
+            log.info("H2 Web Console: http://" + serverName + ":" + port + h2Path);
+            System.out.println(this.cityMapper.findByName("Chengdu"));
             City city = new City();
             city.setName("San Francisco");
             city.setState("CA");
